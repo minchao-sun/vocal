@@ -1,0 +1,14 @@
+{
+  "name": "vocal",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "devDependencies": {
+    "markdown-it-cjk-friendly": "^3.0.0",
+    "vitepress": "^1.6.4"
+  }
+}

@@ -1,0 +1,37 @@
+/* GitHub-style `<p align="center"><img ...></p>` centering. */
+.vp-doc [align='center'] {
+  text-align: center;
+}
+
+.vp-doc [align='center'] > img,
+.vp-doc [align='center'] > video {
+  display: inline-block;
+}
+
+.vp-doc img,
+.vp-doc video {
+  border-radius: 4px;
+}
+
+.vp-doc audio {
+  display: block;
+  width: 100%;
+  max-width: 520px;
+  margin: 16px auto;
+}
+
+.vp-doc video {
+  max-width: 100%;
+  margin: 16px auto;
+}
+
+.vp-doc figure {
+  margin: 24px 0;
+  text-align: center;
+}
+
+.vp-doc figcaption {
+  margin-top: 8px;
+  color: var(--vp-c-text-2);
+  font-size: 14px;
+}

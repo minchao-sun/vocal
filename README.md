@@ -17,5 +17,20 @@
     README.md        本书的目录和阅读说明
     01-xxx.md        正文各篇，按编号排序
     02-xxx.md
-    images/          本书用到的图片
+    images/          本书用到的图片和 GIF
+    audio/           本书用到的音频（按需创建）
+    video/           本书用到的视频（按需创建）
 ```
+
+## 网站
+
+本仓库会自动发布为网站：<https://minchao-sun.github.io/vocal/>。推送到 `main` 后几分钟内自动更新，不需要手动修改网站配置。
+
+- **新书**：新建一个子目录并放入 `README.md`。`README.md` 的一级标题是书名，标题下的第一段文字会作为书架首页上的简介。
+- **章节**：文件名以数字开头（如 `04-共鸣.md`）的 Markdown 文件会按编号出现在侧边栏，侧边栏标题取文件的一级标题。
+- **多媒体**：文件放在本书目录下，用相对路径引用，GitHub 和网站上都能正常显示。
+  - 图片：`![说明](images/x.png)`，需要控制尺寸时用 `<img src="images/x.png" alt="说明" width="300">`
+  - 音频：`<audio controls src="audio/x.mp3"></audio>`
+  - 视频：`<video controls src="video/x.mp4"></video>`
+  - 音频建议用 mp3 或 m4a，视频建议用 mp4（H.264）。单个文件尽量控制在 10 MB 以内，GitHub 的硬上限是 100 MB。
+- **本地预览**：安装 Node.js 后运行 `npm install`，再运行 `npm run dev`。
